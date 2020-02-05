@@ -1,0 +1,14 @@
+{
+  "name": "law-firm-website-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fitness</title>
+    <link rel="shortcut icon" href="images/fav-icon-strong-arm.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#header" id="home-link" class="navigation__link">Home</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-about" id="about-link" class="navigation__link">About</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-instructors" id="instructors-link" class="navigation__link">Instructors</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Blog</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Plans & Pricing</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#" class="navigation__link">Book Online</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-contact" id="contact-link" class="navigation__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="social">
+            <a href="#" class="social__my-account">
+                <svg 
+                    class="social__my-account-image"
+                    viewBox="0 0 512 512.00019"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="m256 511.996094c-141.484375 0-256-114.65625-256-255.996094 0-141.488281 114.496094-256 256-256 141.488281 0 255.996094 114.496094 255.996094 256 0 141.476562-114.667969 255.996094-255.996094 255.996094zm0 0" fill="#54BF9D"/>
+                    <path d="m256 0v511.996094c141.328125 0 255.996094-114.519532 255.996094-255.996094 0-141.5-114.507813-256-255.996094-256zm0 0" fill="#54BF9D"/>
+                    <path d="m256 316c-74.488281 0-145.511719 32.5625-197.417969 102.96875 103.363281 124.941406 294.6875 123.875 396.65625-2.230469-25.179687-25.046875-81.894531-100.738281-199.238281-100.738281zm0 0" fill="#ffffff"/>
+                    <path d="m455.238281 416.738281c-48.140625 59.527344-120.371093 95.257813-199.238281 95.257813v-195.996094c117.347656 0 174.058594 75.699219 199.238281 100.738281zm0 0" fill="#ffffff"/>
+                    <path d="m256 271c-49.628906 0-90-40.375-90-90v-30c0-49.625 40.371094-90 90-90 49.625 0 90 40.375 90 90v30c0 49.625-40.375 90-90 90zm0 0" fill="#ffffff"/>
+                    <path d="m256 61v210c49.628906 0 90-40.371094 90-90v-30c0-49.628906-40.371094-90-90-90zm0 0" fill="#ffffff"/>
+                </svg>
+                <p>Log In</p>
+            </a>
+
+            <ul class="social__list">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg 
+                            class="social__image"
+                            fill="#999999"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 50 50">
+                            <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z"/>
+                        </svg>
+                    </a>
+                </li>
+
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg 
+                            class="social__image"
+                            fill="#999999" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 50 50">
+                            <path d="M50.061,10.438c-1.846,0.818-3.826,1.369-5.908,1.62c2.125-1.273,3.757-3.29,4.523-5.688c-1.986,1.177-4.19,2.033-6.531,2.493c-1.874-2-4.547-3.247-7.504-3.247c-5.68,0-10.284,4.604-10.284,10.282c0,0.805,0.092,1.589,0.269,2.343C16.08,17.812,8.502,13.718,3.429,7.497c-0.885,1.522-1.391,3.289-1.391,5.172c0,3.567,1.812,6.713,4.574,8.56c-1.688-0.054-3.271-0.517-4.657-1.288c0,0.044,0,0.086,0,0.131c0,4.984,3.544,9.134,8.245,10.084c-0.86,0.236-1.769,0.36-2.707,0.36c-0.664,0-1.309-0.064-1.938-0.186c1.313,4.081,5.108,7.06,9.607,7.143c-3.517,2.757-7.951,4.399-12.77,4.399c-0.833,0-1.649-0.048-2.452-0.144c4.548,2.919,9.956,4.619,15.762,4.619c18.915,0,29.26-15.668,29.26-29.252c0-0.448-0.011-0.894-0.03-1.332C46.94,14.313,48.684,12.5,50.061,10.438z"/>
+                        </svg>
+                    </a>
+                </li>
+                
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <svg
+                            class="social__image" 
+                            fill="#999999" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="0 0 50 50">
+                            <path d="M34,3H16C8.83,3,3,8.83,3,16v18c0,7.17,5.83,13,13,13h18c7.17,0,13-5.83,13-13V16C47,8.83,41.17,3,34,3z M25,36c-6.07,0-11-4.93-11-11s4.93-11,11-11s11,4.93,11,11S31.07,36,25,36z M37,15c-1.1,0-2-0.9-2-2s0.9-2,2-2s2,0.9,2,2S38.1,15,37,15z"/>
+                            <path d="M34,25c0,4.96-4.04,9-9,9s-9-4.04-9-9s4.04-9,9-9S34,20.04,34,25z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <header id="header" class="header">
+            <h1 class="header__title">Balanced mind in a balanced body</h1>
+            <h2 class="text-uppercase header__brand-name">Powerhouse fitness</h2>
+            <a href="#" class="btn btn--header">Book Now</a>
+        </header>
+
+            <section id="section-about" class="section-about">
+                <h1 class="section-about__title title-pseudo heading-primary text-uppercase">About</h1>
+                <h2 class="section-about__brand-name heading-secondary">About Powerhouse Fitness</h2>
+                <p class="section-about__paragraph paragraph-default">
+                    I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+                    “Edit Text” or double click me and you can start adding your own content and make changes 
+                    to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great 
+                    place for you to tell a story and let your users know a little more about you.
+                </p>
+
+                <p class="section-about__paragraph paragraph-default">
+                    This is a great space to write long text about your company and your services. You can use 
+                    this space to go into a little more detail about your company. Talk about your team and 
+                    what services you provide. Tell your visitors the story of how you came up with the idea 
+                    for your business and what makes you different from your competitors. Make your company 
+                    stand out and show your visitors who you are.
+                </p>
+            </section>
+
+            <section id="section-instructors" class="section-instructors">
+                <h1 class="section-instructors__title title-pseudo heading-primary text-uppercase">Instructors</h1>
+                <section class="section-instructors__instructors">
+                    <section class="section-instructors__instructor-about">
+                        <a href="#" class="section-instructors__instructor-image-1 instructor-image">
+                            <img src="/images/jeff-cavaliere-photo-2.jpg" alt="Jeff Cavaliere">
+                        </a>
+                        <h2 class="section-instructors__instructor-name">Jeff Cavaliere</h2>
+                        <h3 class="section-instructors__instructor-job text-uppercase">Personal Trainer</h3>
+                        <p class="section-instructors__instructor-paragraph paragraph-default">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+                            “Edit Text” or double click me and you can start adding your own content and make 
+                            changes to the font. Feel free to drag and drop me anywhere you like on your page. 
+                            I’m a great place for you to tell a story and let your users know a little more about 
+                            you.
+                        </p>
+                    </section>
+
+                    <section class="section-instructors__instructor-about">
+                        <a href="#" class="section-instructors__instructor-image-2 instructor-image">
+                            <img src="/images/fitness-girl-2-by-nathan-cowley-pexels.jpg" alt="Girl Instructor">
+                        </a>
+                        <h2 class="section-instructors__instructor-name">Jane Doe</h2>
+                        <h3 class="section-instructors__instructor-job text-uppercase">Personal Trainer</h3>
+                        <p class="section-instructors__instructor-paragraph paragraph-default">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click 
+                            “Edit Text” or double click me and you can start adding your own content and make 
+                            changes to the font. Feel free to drag and drop me anywhere you like on your page. 
+                            I’m a great place for you to tell a story and let your users know a little more about 
+                            you.
+                        </p>
+                    </section>
+                </section>
+            </section>
+
+            <section id="section-call-to-action" class="section-call-to-action">
+                <h1 class="section-call-to-action__title heading-primary">Wake up and Workout.</h1>
+                <section class="section-call-to-action__mobile-app">
+                    <section class="section-call-to-action__about-app">
+                        <h2 class="section-call-to-action__about-app-heading heading-secondary">Book on the Go with the Wix Mobile App</h2>
+                        <p class="section-call-to-action__mobile-app-paragraph paragraph-default">
+                            The app lets your clients book services, get notifications & stay engaged with your 
+                            business on the go. Let them join with a download link sent to their mobile.
+                        </p>
+                    </section>
+                    <section class="section-call-to-action__phone-number">
+                        <input class="input" type="text" name="country-prefix" id="country-prefix" placeholder="+40" required>
+                        <input class="input" type="text" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+                        <input class="section-call-to-action__phone-number-sumbit" type="submit" value="Send">
+                    </section>
+                </section>
+            </section>
+
+            <section id="section-contact" class="section-contact">
+                <h1 class="section-contact__title title-pseudo heading-primary text-uppercase">Contact</h1>
+                <section class="section-contact__details">
+                    <section class="section-contact__details-card section-contact__details-directions">
+                        <h2 class="section-contact__details-heading heading-secondary">Getting Here:</h2>
+                        <p class="section-contact__details-paragraph paragraph-default">I'm a paragraph. Click here to add your own text and edit me.</p>
+                    </section>
+
+                    <section class="section-contact__details-card section-contact__details-address">
+                        <h2 class="section-contact__details-heading heading-secondary">Our Address:</h2>
+                        <p class="section-contact__details-paragraph paragraph-default">500 Terry Francois Street San Francisco, CA 94158</p>
+                    </section>
+
+                    <section class="section-contact__details-card section-contact__details-email">
+                        <h2 class="section-contact__details-heading heading-secondary">Email:</h2>
+                        <p class="section-contact__details-paragraph paragraph-default">info@mysite.com</p>
+                    </section>
+
+                    <section class="section-contact__details-card section-contact__details-phone">
+                        <h2 class="section-contact__details-heading heading-secondary">Phone:</h2>
+                        <p class="section-contact__details-paragraph paragraph-default">1-800-000-0000</p>
+                    </section>
+                </section>
+
+                <section class="section-contact__map-and-form">
+                    <section class="section-contact__google-map">
+                        <iframe src="https://www.google.com/maps/d/edit?mid=1YsFeDGY6vc0WhplN_ODIHdYMHb-EZWnS&ll=37.76990105780768%2C-122.38697105708502&z=17" width="425" height="220" style="border:0;" allowfullscreen=""></iframe>
+                    </section>
+
+                    <section class="section-contact__form">
+                        <form class="section-contact__form-group">
+                            <input id="section-contact__form-name-input" class="section-contact__input" type="text" placeholder="Name">
+                            <input id="section-contact__form-email-input" class="section-contact__input" type="text" placeholder="Email">
+                            <input id="section-contact__form-subject-input" class="section-contact__input" type="text" placeholder="Subject">
+                            <textarea id="section-contact__form-message" class="section-contact__input" name="form-message" cols="30" rows="10"></textarea>
+                            <a href="#" class="section-contact__form-submit">Submit</a>
+                        </form>
+                    </section>
+                </section>
+            </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p class="footer__copyright paragraph-default">
+            © 2023 by Powerhouse Fitness. Created after a 
+            <a href="https://www.wix.com/website-template/view/html/1706?utm_source=freewebsitetemplates&utm_medium=template_banner&utm_term=blank&utm_content=ma_html_fwt_temp_1_2_powerhouse&utm_campaign=ma_fwt&experiment_id=cpa_fwt_temp_1_2_powerhouse1706#">Wix.com</a>
+             template.
+        </p>
+        <section class="footer__subscribe">
+            <p class="footer__subscribe-paragraph">Join our mailing list</p>
+            <input id="footer__subscribe-email-input" class="footer__subscribe-input" type="email" name="email" placeholder="Enter your email here*">
+            <a href="#" class="footer__subscribe-btn btn">Subscribe Now</a>
+        </section>
+    </footer>
+    
+    <script src="/javascript/script.js"></script>
+</body>
+</html>

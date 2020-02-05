@@ -1,0 +1,30 @@
+.header {
+    height: 100vh;
+    background-image: url(../../images/background-girl-fitness-by-cathy-pham-unspalsh.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        width: 80rem;
+        font-size: 8rem;
+        
+        color: $color-primary;
+    }
+
+    &__brand-name {
+        font-size: 1.6rem;
+        font-weight: 800;
+        line-height: 8rem;
+        letter-spacing: 2px;
+        color: $color-white-1;
+    }
+}

@@ -1,0 +1,98 @@
+.navigation {
+    font-size: 1.6rem;
+    font-weight: 200;
+    padding: 2rem;
+    background-color: $color-white-1;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    &__nav {
+        flex-basis: 65rem;
+
+        display: flex;
+    }
+
+    &__list {
+        flex-basis: 65rem;
+        justify-content: space-evenly;
+
+        display: flex;
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-primary-lighter-2;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-secondary;
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__my-account {
+            color: $color-secondary;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+
+            &:link,
+            &:visited {
+                color: $color-secondary;
+                text-decoration: none;
+            }
+
+            &:hover,
+            &:active,
+            &:hover path[fill="#54BF9D"],
+            &:active path[fill="#54BF9D"] {
+                color: $color-primary-lighter-2;
+                fill: $color-primary-lighter-2;
+            }
+        }
+
+        &__my-account-image {
+            width: 25px;
+            margin-right: 1rem;
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            text-decoration: none;
+
+            &:link,
+            &:visited {
+                color: $color-primary-lighter-2;
+                text-decoration: none;
+            }
+        }
+
+        &__image {
+            width: 18px;
+            margin-right: 1rem;
+
+            &:hover,
+            &:active {
+                fill: $color-secondary;
+            }
+        }
+    }
+}

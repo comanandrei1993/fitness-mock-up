@@ -1,0 +1,326 @@
+.section-about,
+.section-instructors,
+.section-call-to-action,
+.section-contact {
+    padding: 7rem;
+    color: $color-white-1;
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__brand-name {
+        line-height: 6rem;
+    }
+
+    &__paragraph {
+        width: 60rem;
+        margin-top: 2rem;
+    }
+}
+
+.section-about__title,
+.section-instructors__title,
+.section-call-to-action__title {
+    line-height: 8rem;
+}
+
+.section-about {
+    background-color: $color-primary;
+}
+
+.section-instructors {
+    background-image: url(../../images/gym-background-3-by-lukas-pexels.jpg);
+    background-color: $color-secondary;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    color: $color-primary;
+
+    .title-pseudo::before,
+    .title-pseudo::after {
+        background-color: $color-tertiary;
+    }
+
+    &__instructors {
+        width: 550px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__instructor-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 250px;
+            width: 250px;
+            transition: opacity .3s ease-in;
+        }
+    }
+
+    &__instructor-name {
+        line-height: 3rem;
+        margin-top: 4rem;
+        font-size: 2.4rem;
+    }
+
+    &__instructor-job {
+        line-height: 3rem;
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        font-weight: 200;
+    }
+
+    &__instructor-paragraph {
+        max-width: 250px;
+    }
+
+    &__instructor-image-1 {
+        background-image: url(../../images/jeff-cavaliere-photo-1.jpg);
+    }
+
+    &__instructor-image-1:hover img, 
+    &__instructor-image-2:hover img {
+        opacity: 0;
+    }
+
+    &__instructor-image-2 {
+        background-image: url(../../images/fitness-girl-by-nathan-cowley-pexels.jpg);
+    }
+
+    &__instructor-image-1,
+    &__instructor-image-2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+}
+
+.section-call-to-action {
+    background-color: $color-tertiary;
+    color: $color-primary;
+
+    &__title {
+        font-size: 8rem;
+        letter-spacing: normal;
+    }
+
+    &__mobile-app {
+        margin-top: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__mobile-app-paragraph {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        font-weight: 200;
+    }
+
+    &__about-app {
+        max-width: 600px;
+        text-align: left;
+        line-height: 5rem;
+    }
+
+    &__about-app-heading {
+        letter-spacing: 0;
+    }
+
+    &__phone-number {
+        #country-prefix {
+            width: 70px;
+        }
+
+        #phone-number {
+            width: 160px;
+        }
+    }
+
+    &__phone-number-sumbit {
+        height: 50px;
+        padding: 1.5rem 3rem;
+        border: none;
+        font-size: 1.2rem;
+        background-color: $color-primary;
+        color: $color-white-1;
+    }
+
+    &__phone-number-sumbit:link,
+    &__phone-number-sumbit:visited {
+        text-decoration: none;
+        transition: opacity .3s ease-in;
+    }
+
+    &__phone-number-sumbit:hover,
+    &__phone-number-sumbit:active {
+        opacity: .8;
+    }
+}
+
+.section-contact {
+    background-color: $color-primary;
+
+    &__details {
+        max-width: 75rem;
+        line-height: normal;
+        margin-bottom: 6rem;
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__details-card {
+        text-align: left;
+
+        flex-basis: 20rem;
+    }
+
+    &__details-heading {
+        margin-bottom: 1rem;
+    }
+
+    &__details-directions {
+        flex-basis: 20rem;
+    }
+
+    &__details-address {
+        flex-basis: 18rem;
+    }
+
+    &__details-email {
+        flex-basis: 10rem;
+    }
+
+    &__details-phone {
+        flex-basis: 10rem;
+    }
+
+    &__map-and-form {
+        width: 100rem;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__google-map {
+        align-self: flex-start;
+    }
+
+    &__form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input {
+        background-color: $color-primary;
+        color: $color-gray-1;
+        border: 1px solid $color-white-1;
+        width: 40rem;
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+    }
+
+    &__input:hover,
+    &__input:focus {
+        border: 3px solid $color-white-1;
+    }
+
+    &__input:not(:last-child) {
+        margin-bottom: .5rem;
+    }
+
+    [name=form-message] {
+        height: 12rem;
+        resize: none;
+    }
+
+    &__form-submit:link, 
+    &__form-submit:visited {
+        padding: .5rem 1rem;
+        font-size: 1.4rem;
+        color: $color-white-1;
+        text-decoration: none;
+        transition: background-color .3s ease-out;
+
+        align-self: flex-end;
+    }
+
+    &__form-submit:hover, 
+    &__form-submit:active {
+        background-color: $color-primary-lighter-2;
+    } 
+}
+
+.footer {
+    max-width: 92.5rem;
+    height: 35rem;
+    padding: 8rem 0;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__copyright {
+        align-self: flex-end;
+    }
+
+    &__copyright,
+    &__copyright * {
+        color: $color-primary-lighter-2;
+    }
+
+    &__subscribe {
+        flex-basis: 40rem;
+
+        display: flex;
+        flex-direction: column;
+
+        *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__subscribe-paragraph {
+        font-size: 1.6rem;
+        color: $color-primary;
+    }
+
+    &__subscribe-input {
+        padding: .5rem 1rem;
+        color: $color-black-1;
+        border: 1px solid $color-black-1;
+
+        &:hover,
+        &:focus {
+            border: 3px solid $color-black-1;
+        }
+    }
+
+    &__subscribe-btn {
+        font-size: 1.3rem;
+        text-align: center;
+        line-height: 3.5rem;
+
+        transition: opacity .3s ease-in;
+
+        &:hover,
+        &:active {
+            opacity: .9;
+        }
+    }
+}

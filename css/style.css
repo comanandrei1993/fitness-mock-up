@@ -1,0 +1,396 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+  -webkit-scroll-behavior: smooth;
+  -moz-scroll-behavior: smooth;
+  -o-scroll-behavior: smooth;
+  -ms-scroll-behavior: smooth;
+  scroll-behavior: smooth; }
+
+body {
+  font-family: sans-serif; }
+
+.heading-primary {
+  font-size: 5rem;
+  letter-spacing: 1rem; }
+
+.heading-secondary {
+  font-size: 2.4rem;
+  letter-spacing: .2rem; }
+
+.paragraph-default {
+  font-size: 1.4rem;
+  line-height: 2.6rem; }
+
+.text-default {
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+.text-big {
+  font-size: 1.8rem; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.wrapper {
+  max-width: 1400px; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  color: #fefdfe;
+  background-color: #4a4c67; }
+
+.btn--header:link, .btn--header:visited {
+  padding: 1.1rem 4rem .8rem 4rem;
+  font-size: 1.2rem;
+  border: 3px solid #fefdfe;
+  background-color: #4a4c67;
+  transition: all .3s ease-in; }
+
+.btn--header:hover, .btn--header:active {
+  border: 3px solid #54BF9D;
+  background-color: #54BF9D;
+  color: #4a4c67; }
+
+.input {
+  background-color: transparent;
+  padding: 1.3rem;
+  border: none;
+  border-bottom: 3px solid #4a4c67;
+  font-size: 1.4rem;
+  transition: all .3s ease-in; }
+  .input:hover, .input:focus {
+    border-bottom: 3px solid rgba(74, 76, 103, 0.7); }
+  .input:focus {
+    background-color: rgba(74, 76, 103, 0.3); }
+
+.instructor-image {
+  height: 250px;
+  width: 250px;
+  cursor: pointer; }
+
+.title-pseudo {
+  width: 100%;
+  padding: 4rem;
+  margin-bottom: 6rem;
+  position: relative; }
+  .title-pseudo::before, .title-pseudo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 6rem;
+    width: .3rem;
+    padding: 10px 4px;
+    background-color: #54BF9D; }
+  .title-pseudo::before {
+    top: -5%;
+    left: 51.5%;
+    transform: rotate(30deg); }
+  .title-pseudo::after {
+    top: 65%;
+    left: 48%;
+    transform: rotate(30deg); }
+
+.header {
+  height: 100vh;
+  background-image: url(../../images/background-girl-fitness-by-cathy-pham-unspalsh.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header__title {
+    width: 80rem;
+    font-size: 8rem;
+    color: #4a4c67; }
+  .header__brand-name {
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 8rem;
+    letter-spacing: 2px;
+    color: #fefdfe; }
+
+.navigation {
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding: 2rem;
+  background-color: #fefdfe;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-evenly; }
+  .navigation__nav {
+    flex-basis: 65rem;
+    display: flex; }
+  .navigation__list {
+    flex-basis: 65rem;
+    justify-content: space-evenly;
+    display: flex; }
+  .navigation__link:link, .navigation__link:visited {
+    color: #7A7BA6;
+    text-decoration: none; }
+  .navigation__link:hover, .navigation__link:active {
+    color: #54BF9D; }
+  .navigation .social {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navigation .social__my-account {
+      color: #54BF9D;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px; }
+      .navigation .social__my-account:link, .navigation .social__my-account:visited {
+        color: #54BF9D;
+        text-decoration: none; }
+      .navigation .social__my-account:hover, .navigation .social__my-account:active,
+      .navigation .social__my-account:hover path[fill="#54BF9D"],
+      .navigation .social__my-account:active path[fill="#54BF9D"] {
+        color: #7A7BA6;
+        fill: #7A7BA6; }
+    .navigation .social__my-account-image {
+      width: 25px;
+      margin-right: 1rem; }
+    .navigation .social__list {
+      display: flex; }
+    .navigation .social__link {
+      text-decoration: none; }
+      .navigation .social__link:link, .navigation .social__link:visited {
+        color: #7A7BA6;
+        text-decoration: none; }
+    .navigation .social__image {
+      width: 18px;
+      margin-right: 1rem; }
+      .navigation .social__image:hover, .navigation .social__image:active {
+        fill: #54BF9D; }
+
+.section-about,
+.section-instructors,
+.section-call-to-action,
+.section-contact {
+  padding: 7rem;
+  color: #fefdfe;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section-about__brand-name,
+  .section-instructors__brand-name,
+  .section-call-to-action__brand-name,
+  .section-contact__brand-name {
+    line-height: 6rem; }
+  .section-about__paragraph,
+  .section-instructors__paragraph,
+  .section-call-to-action__paragraph,
+  .section-contact__paragraph {
+    width: 60rem;
+    margin-top: 2rem; }
+
+.section-about__title,
+.section-instructors__title,
+.section-call-to-action__title {
+  line-height: 8rem; }
+
+.section-about {
+  background-color: #4a4c67; }
+
+.section-instructors {
+  background-image: url(../../images/gym-background-3-by-lukas-pexels.jpg);
+  background-color: #54BF9D;
+  background-attachment: fixed;
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  color: #4a4c67; }
+  .section-instructors .title-pseudo::before,
+  .section-instructors .title-pseudo::after {
+    background-color: #FCF390; }
+  .section-instructors__instructors {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .section-instructors__instructor-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .section-instructors__instructor-about img {
+      height: 250px;
+      width: 250px;
+      transition: opacity .3s ease-in; }
+  .section-instructors__instructor-name {
+    line-height: 3rem;
+    margin-top: 4rem;
+    font-size: 2.4rem; }
+  .section-instructors__instructor-job {
+    line-height: 3rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-weight: 200; }
+  .section-instructors__instructor-paragraph {
+    max-width: 250px; }
+  .section-instructors__instructor-image-1 {
+    background-image: url(../../images/jeff-cavaliere-photo-1.jpg); }
+  .section-instructors__instructor-image-1:hover img,
+  .section-instructors__instructor-image-2:hover img {
+    opacity: 0; }
+  .section-instructors__instructor-image-2 {
+    background-image: url(../../images/fitness-girl-by-nathan-cowley-pexels.jpg); }
+  .section-instructors__instructor-image-1, .section-instructors__instructor-image-2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top; }
+
+.section-call-to-action {
+  background-color: #FCF390;
+  color: #4a4c67; }
+  .section-call-to-action__title {
+    font-size: 8rem;
+    letter-spacing: normal; }
+  .section-call-to-action__mobile-app {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .section-call-to-action__mobile-app-paragraph {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 200; }
+  .section-call-to-action__about-app {
+    max-width: 600px;
+    text-align: left;
+    line-height: 5rem; }
+  .section-call-to-action__about-app-heading {
+    letter-spacing: 0; }
+  .section-call-to-action__phone-number #country-prefix {
+    width: 70px; }
+  .section-call-to-action__phone-number #phone-number {
+    width: 160px; }
+  .section-call-to-action__phone-number-sumbit {
+    height: 50px;
+    padding: 1.5rem 3rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #4a4c67;
+    color: #fefdfe; }
+  .section-call-to-action__phone-number-sumbit:link, .section-call-to-action__phone-number-sumbit:visited {
+    text-decoration: none;
+    transition: opacity .3s ease-in; }
+  .section-call-to-action__phone-number-sumbit:hover, .section-call-to-action__phone-number-sumbit:active {
+    opacity: .8; }
+
+.section-contact {
+  background-color: #4a4c67; }
+  .section-contact__details {
+    max-width: 75rem;
+    line-height: normal;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: space-around; }
+  .section-contact__details-card {
+    text-align: left;
+    flex-basis: 20rem; }
+  .section-contact__details-heading {
+    margin-bottom: 1rem; }
+  .section-contact__details-directions {
+    flex-basis: 20rem; }
+  .section-contact__details-address {
+    flex-basis: 18rem; }
+  .section-contact__details-email {
+    flex-basis: 10rem; }
+  .section-contact__details-phone {
+    flex-basis: 10rem; }
+  .section-contact__map-and-form {
+    width: 100rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .section-contact__google-map {
+    align-self: flex-start; }
+  .section-contact__form-group {
+    display: flex;
+    flex-direction: column; }
+  .section-contact__input {
+    background-color: #4a4c67;
+    color: #b1a9a9;
+    border: 1px solid #fefdfe;
+    width: 40rem;
+    padding: .5rem 1rem;
+    font-size: 1.4rem; }
+  .section-contact__input:hover, .section-contact__input:focus {
+    border: 3px solid #fefdfe; }
+  .section-contact__input:not(:last-child) {
+    margin-bottom: .5rem; }
+  .section-contact [name=form-message] {
+    height: 12rem;
+    resize: none; }
+  .section-contact__form-submit:link, .section-contact__form-submit:visited {
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    color: #fefdfe;
+    text-decoration: none;
+    transition: background-color .3s ease-out;
+    align-self: flex-end; }
+  .section-contact__form-submit:hover, .section-contact__form-submit:active {
+    background-color: #7A7BA6; }
+
+.footer {
+  max-width: 92.5rem;
+  height: 35rem;
+  padding: 8rem 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+  .footer__copyright {
+    align-self: flex-end; }
+  .footer__copyright,
+  .footer__copyright * {
+    color: #7A7BA6; }
+  .footer__subscribe {
+    flex-basis: 40rem;
+    display: flex;
+    flex-direction: column; }
+    .footer__subscribe *:not(:last-child) {
+      margin-bottom: 1rem; }
+  .footer__subscribe-paragraph {
+    font-size: 1.6rem;
+    color: #4a4c67; }
+  .footer__subscribe-input {
+    padding: .5rem 1rem;
+    color: #000;
+    border: 1px solid #000; }
+    .footer__subscribe-input:hover, .footer__subscribe-input:focus {
+      border: 3px solid #000; }
+  .footer__subscribe-btn {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 3.5rem;
+    transition: opacity .3s ease-in; }
+    .footer__subscribe-btn:hover, .footer__subscribe-btn:active {
+      opacity: .9; }

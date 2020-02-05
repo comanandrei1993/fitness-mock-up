@@ -1,0 +1,18 @@
+.input {
+    background-color: transparent;
+    padding: 1.3rem;
+    border: none;
+    border-bottom: 3px solid $color-primary;
+    font-size: 1.4rem;
+
+    transition: all .3s ease-in;
+
+    &:hover,
+    &:focus {
+        border-bottom: 3px solid rgba($color-primary, .7);
+    }
+
+    &:focus {
+        background-color: rgba($color-primary, .3);
+    }
+}

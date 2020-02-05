@@ -1,0 +1,28 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        color: $color-white-1;
+        background-color: $color-primary;
+    }
+
+    &--header:link,
+    &--header:visited {
+        padding: 1.1rem 4rem .8rem 4rem;
+        font-size: 1.2rem;
+        border: 3px solid $color-white-1;
+        background-color: $color-primary;
+        
+        transition: all .3s ease-in;
+    }
+
+    &--header:hover,
+    &--header:active {
+        border: 3px solid $color-secondary;
+        background-color: $color-secondary;
+        color:$color-primary;
+    }
+}
