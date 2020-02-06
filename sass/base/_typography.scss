@@ -12,6 +12,14 @@ body {
     letter-spacing: .2rem;
 }
 
+.letter-spacing-default {
+    letter-spacing: 0;
+}
+
+.letter-spacing-big {
+    letter-spacing: 1rem;
+}
+
 .paragraph-default {
     font-size: 1.4rem;
     line-height: 2.6rem;

@@ -1,0 +1,20 @@
+.section-plans-and-pricing {
+    padding: 7rem;
+    text-align: center;
+
+    background-color: $color-secondary;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        line-height: 8rem;
+
+        &::before,
+        &::after {
+            background-color: $color-tertiary;
+        }
+    }
+}

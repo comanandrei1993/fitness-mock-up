@@ -30,6 +30,12 @@ body {
   font-size: 2.4rem;
   letter-spacing: .2rem; }
 
+.letter-spacing-default {
+  letter-spacing: 0; }
+
+.letter-spacing-big {
+  letter-spacing: 1rem; }
+
 .paragraph-default {
   font-size: 1.4rem;
   line-height: 2.6rem; }
@@ -394,3 +400,16 @@ body {
     transition: opacity .3s ease-in; }
     .footer__subscribe-btn:hover, .footer__subscribe-btn:active {
       opacity: .9; }
+
+.section-plans-and-pricing {
+  padding: 7rem;
+  text-align: center;
+  background-color: #54BF9D;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section-plans-and-pricing__title {
+    line-height: 8rem; }
+    .section-plans-and-pricing__title::before, .section-plans-and-pricing__title::after {
+      background-color: #FCF390; }
