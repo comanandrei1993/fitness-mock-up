@@ -1,3 +1,11 @@
+.current-nav-link-page {
+    &,
+    &:link,
+    &:visited {
+        color: $color-secondary !important;
+    }
+}
+
 .wrapper {
     max-width: 1400px;
 }

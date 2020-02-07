@@ -1,8 +1,9 @@
 .section-plans-and-pricing {
-    padding: 7rem;
+    width: 100%;
+    padding: 7rem 0;
     text-align: center;
-
-    background-color: $color-secondary;
+    color: $color-primary;
+    border-bottom: 4px solid $color-primary;
 
     display: flex;
     flex-direction: column;
@@ -11,10 +12,98 @@
 
     &__title {
         line-height: 8rem;
+        background-color: $color-secondary-lighter-1;
+        padding: 14rem;
 
         &::before,
         &::after {
             background-color: $color-tertiary;
         }
+
+        &::before {
+            transform: translate(-3rem, 10rem) rotate(30deg);
+        }
+
+        &::after {
+            transform: translate(-4rem, -2rem) rotate(30deg);
+        }
+    }
+
+    &__plans-heading {
+        margin-bottom: 4rem;
+        font-size: 5.5rem;
+    }
+
+    &__pricing-cards {
+        width: 96rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__full-pricing-card {
+        width: 30rem;
+        padding: 3rem 0rem;
+        border: 1px solid $color-gray-2;
+
+        &:nth-child(2) {
+            background-color: $color-blue-light-1;
+        }
+    }
+
+    &__membership-type {
+        font-size: 2rem;
+        font-weight: 100;
+        position: relative;
+    }
+
+    &__price {
+        margin-top: 1rem;
+        font-size: 10rem;
+        font-weight: 600;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__currency-type {
+        @extend .font-size-default;
+    }
+
+    &__billed-every {
+        margin-bottom: 1rem; 
+        @extend .font-size-smaller;
+        font-weight: 800;
+    }
+
+    &__ideal-for {
+        @extend .font-size-small;
+        margin-bottom: 2.5rem;
+    }
+
+    &__period-of-availability {
+        @extend .font-size-smaller;
+        margin-bottom: 2.5rem;
+    }
+
+    &__join-btn {
+        width: 80%;
+        @extend .font-size-default;
+        padding: 1.5rem 2rem;
+        margin-bottom: 2.5rem;
+
+        &:hover,
+        &:active {
+            opacity: .7;
+        }
+    }
+
+    &__benefits-card {
+        border-top: 1px solid $color-gray-2;
+    }
+
+    &__benefit {
+        @extend .font-size-smaller;
+        margin: 2.5rem 0;
     }
 }

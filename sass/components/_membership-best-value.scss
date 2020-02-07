@@ -1,0 +1,15 @@
+.membership-best-value {
+    &::before {
+        content: "Best Value";
+        background-color: $color-secondary-lighter-1;
+        display: block;
+        width: 30%;
+        margin: 0 auto;
+        padding: .5rem 0;
+        font-size: 1.4rem;
+        position: absolute;
+        top: -4.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -22,6 +22,21 @@ html {
 body {
   font-family: sans-serif; }
 
+.font-size-smaller, .section-plans-and-pricing__billed-every, .section-plans-and-pricing__period-of-availability, .section-plans-and-pricing__benefit {
+  font-size: 1.2rem; }
+
+.font-size-small, .section-plans-and-pricing__ideal-for {
+  font-size: 1.4rem; }
+
+.font-size-default, .section-plans-and-pricing__currency-type, .section-plans-and-pricing__join-btn {
+  font-size: 1.6rem; }
+
+.font-size-big {
+  font-size: 2rem; }
+
+.font-size-bigger {
+  font-size: 2.4rem; }
+
 .heading-primary {
   font-size: 5rem;
   letter-spacing: 1rem; }
@@ -49,6 +64,9 @@ body {
 
 .text-uppercase {
   text-transform: uppercase; }
+
+.current-nav-link-page, .current-nav-link-page:link, .current-nav-link-page:visited {
+  color: #54BF9D !important; }
 
 .wrapper {
   max-width: 1400px; }
@@ -88,6 +106,19 @@ body {
   height: 250px;
   width: 250px;
   cursor: pointer; }
+
+.membership-best-value::before {
+  content: "Best Value";
+  background-color: #67F1C8;
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: .5rem 0;
+  font-size: 1.4rem;
+  position: absolute;
+  top: -4.5rem;
+  left: 50%;
+  transform: translateX(-50%); }
 
 .title-pseudo {
   width: 100%;
@@ -344,7 +375,7 @@ body {
     flex-direction: column; }
   .section-contact__input {
     background-color: #4a4c67;
-    color: #b1a9a9;
+    color: #dbd0d0;
     border: 1px solid #fefdfe;
     width: 40rem;
     padding: .5rem 1rem;
@@ -401,15 +432,85 @@ body {
     .footer__subscribe-btn:hover, .footer__subscribe-btn:active {
       opacity: .9; }
 
-.section-plans-and-pricing {
-  padding: 7rem;
+.section-book-online {
+  width: 100%;
+  padding: 7rem 0;
   text-align: center;
-  background-color: #54BF9D;
+  color: #fefdfe;
+  border-bottom: 4px solid #4a4c67;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .section-book-online__title {
+    line-height: 5rem;
+    letter-spacing: .5rem;
+    background-color: #4a4c67;
+    padding: 14rem; }
+    .section-book-online__title::before, .section-book-online__title::after {
+      background-color: #FCF390; }
+    .section-book-online__title::before {
+      transform: translate(1.5rem, 10rem) rotate(30deg); }
+    .section-book-online__title::after {
+      transform: translate(-2rem, -1.5rem) rotate(30deg); }
+
+.section-plans-and-pricing {
+  width: 100%;
+  padding: 7rem 0;
+  text-align: center;
+  color: #4a4c67;
+  border-bottom: 4px solid #4a4c67;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .section-plans-and-pricing__title {
-    line-height: 8rem; }
+    line-height: 8rem;
+    background-color: #67F1C8;
+    padding: 14rem; }
     .section-plans-and-pricing__title::before, .section-plans-and-pricing__title::after {
       background-color: #FCF390; }
+    .section-plans-and-pricing__title::before {
+      transform: translate(-3rem, 10rem) rotate(30deg); }
+    .section-plans-and-pricing__title::after {
+      transform: translate(-4rem, -2rem) rotate(30deg); }
+  .section-plans-and-pricing__plans-heading {
+    margin-bottom: 4rem;
+    font-size: 5.5rem; }
+  .section-plans-and-pricing__pricing-cards {
+    width: 96rem;
+    display: flex;
+    justify-content: space-between; }
+  .section-plans-and-pricing__full-pricing-card {
+    width: 30rem;
+    padding: 3rem 0rem;
+    border: 1px solid #D1CFD2; }
+    .section-plans-and-pricing__full-pricing-card:nth-child(2) {
+      background-color: #E0FBF3; }
+  .section-plans-and-pricing__membership-type {
+    font-size: 2rem;
+    font-weight: 100;
+    position: relative; }
+  .section-plans-and-pricing__price {
+    margin-top: 1rem;
+    font-size: 10rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center; }
+  .section-plans-and-pricing__billed-every {
+    margin-bottom: 1rem;
+    font-weight: 800; }
+  .section-plans-and-pricing__ideal-for {
+    margin-bottom: 2.5rem; }
+  .section-plans-and-pricing__period-of-availability {
+    margin-bottom: 2.5rem; }
+  .section-plans-and-pricing__join-btn {
+    width: 80%;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2.5rem; }
+    .section-plans-and-pricing__join-btn:hover, .section-plans-and-pricing__join-btn:active {
+      opacity: .7; }
+  .section-plans-and-pricing__benefits-card {
+    border-top: 1px solid #D1CFD2; }
+  .section-plans-and-pricing__benefit {
+    margin: 2.5rem 0; }

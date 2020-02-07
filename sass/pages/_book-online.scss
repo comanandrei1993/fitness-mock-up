@@ -1,0 +1,32 @@
+.section-book-online {
+    width: 100%;
+    padding: 7rem 0;
+    text-align: center;
+    color: $color-white-1;
+    border-bottom: 4px solid $color-primary;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        line-height: 5rem;
+        letter-spacing: .5rem;
+        background-color: $color-primary;
+        padding: 14rem;
+
+        &::before,
+        &::after {
+            background-color: $color-tertiary;
+        }
+
+        &::before {
+            transform: translate(1.5rem, 10rem) rotate(30deg);
+        }
+
+        &::after {
+            transform: translate(-2rem, -1.5rem) rotate(30deg);
+        }
+    }
+}
