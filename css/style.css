@@ -436,7 +436,6 @@ body {
   width: 100%;
   padding: 7rem 0;
   text-align: center;
-  color: #fefdfe;
   border-bottom: 4px solid #4a4c67;
   display: flex;
   flex-direction: column;
@@ -446,6 +445,7 @@ body {
     line-height: 5rem;
     letter-spacing: .5rem;
     background-color: #4a4c67;
+    color: #fefdfe;
     padding: 14rem; }
     .section-book-online__title::before, .section-book-online__title::after {
       background-color: #FCF390; }
@@ -453,6 +453,59 @@ body {
       transform: translate(1.5rem, 10rem) rotate(30deg); }
     .section-book-online__title::after {
       transform: translate(-2rem, -1.5rem) rotate(30deg); }
+  .section-book-online__bookings {
+    width: 92.5rem;
+    display: flex;
+    flex-direction: column; }
+  .section-book-online__bookings-row {
+    width: 92.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between; }
+  .section-book-online__booking {
+    border: 1px solid #D1CFD2; }
+  .section-book-online__booking-img {
+    height: 19rem;
+    width: 28.5rem;
+    cursor: pointer; }
+  .section-book-online .booking-image-hover {
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+    .section-book-online .booking-image-hover:hover {
+      filter: contrast(70%) brightness(90%); }
+  .section-book-online .booking-image-1 {
+    background-image: url(../../images/book-online-images/core-fitness-jonathan-borba-unsplash.jpg); }
+  .section-book-online .booking-image-2 {
+    background-image: url(../../images/book-online-images/trx-anastase-maragos-unsplash.jpg); }
+  .section-book-online .booking-image-3 {
+    background-image: url(../../images/book-online-images/mind-and-body-mr-lee-unsplash.jpg); }
+  .section-book-online .booking-image-4 {
+    background-image: url(../../images/book-online-images/spinning-trust-tru-katsande-unsplash.jpg); }
+  .section-book-online .booking-image-5 {
+    background-image: url(../../images/book-online-images/kick-boxing-justin-ng-unsplash.jpg); }
+  .section-book-online .booking-image-6 {
+    background-image: url(../../images/book-online-images/pilates-form-unsplash.jpg); }
+  .section-book-online__booking-title {
+    font-size: 2rem;
+    font-weight: 200;
+    color: #54BF9D;
+    cursor: pointer;
+    margin-top: 3rem; }
+  .section-book-online__booking-duration {
+    font-size: 1.6rem;
+    margin-top: 2rem; }
+  .section-book-online__booking-price {
+    font-size: 1.6rem;
+    margin: 1rem 0 2rem 0; }
+  .section-book-online__booking-btn {
+    font-size: 1.6rem;
+    padding: 1rem 3rem;
+    margin: 1rem 0 3rem 0;
+    transition: opacity .2s ease-in; }
+    .section-book-online__booking-btn:hover {
+      opacity: .7; }
 
 .section-plans-and-pricing {
   width: 100%;

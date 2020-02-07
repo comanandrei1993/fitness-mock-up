@@ -2,7 +2,6 @@
     width: 100%;
     padding: 7rem 0;
     text-align: center;
-    color: $color-white-1;
     border-bottom: 4px solid $color-primary;
 
     display: flex;
@@ -14,6 +13,7 @@
         line-height: 5rem;
         letter-spacing: .5rem;
         background-color: $color-primary;
+        color: $color-white-1;
         padding: 14rem;
 
         &::before,
@@ -27,6 +27,95 @@
 
         &::after {
             transform: translate(-2rem, -1.5rem) rotate(30deg);
+        }
+    }
+
+    &__bookings {
+        width: 92.5rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bookings-row {
+        width: 92.5rem;
+        margin-bottom: 3rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__booking {
+        border: 1px solid $color-gray-2;
+    }
+
+    &__booking-img {
+        height: 19rem;
+        width: 28.5rem;
+        cursor: pointer;
+    }
+
+    .booking-image-hover {
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover {
+            filter: contrast(70%) brightness(90%);
+        }
+    }
+
+    .booking-image-1 {
+        background-image: url(../../images/book-online-images/core-fitness-jonathan-borba-unsplash.jpg);
+    }
+
+    .booking-image-2 {
+        background-image: url(../../images/book-online-images/trx-anastase-maragos-unsplash.jpg);
+    }
+
+    .booking-image-3 {
+        background-image: url(../../images/book-online-images/mind-and-body-mr-lee-unsplash.jpg);
+    }
+
+    .booking-image-4 {
+        background-image: url(../../images/book-online-images/spinning-trust-tru-katsande-unsplash.jpg);
+    }
+
+    .booking-image-5 {
+        background-image: url(../../images/book-online-images/kick-boxing-justin-ng-unsplash.jpg);
+    }
+
+    .booking-image-6 {
+        background-image: url(../../images/book-online-images/pilates-form-unsplash.jpg);
+    }
+
+    &__booking-title {
+        font-size: 2rem;
+        font-weight: 200;
+        color: $color-secondary;
+        cursor: pointer;
+        margin-top: 3rem;
+    }
+
+    &__booking-duration {
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+
+    &__booking-price {
+        font-size: 1.6rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    &__booking-btn {
+        font-size: 1.6rem;
+        padding: 1rem 3rem;
+        margin: 1rem 0 3rem 0;
+        transition: opacity .2s ease-in;
+
+        &:hover {
+            opacity: .7;
         }
     }
 }
