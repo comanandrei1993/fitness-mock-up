@@ -1,3 +1,13 @@
+//////////////////////////////////////
+// Style nav links on hover /////////
+////////////////////////////////////
+class NavObject {
+    constructor(navElement, pageSection, sectionYPosition) {
+        this.pageSection = pageSection,
+        this.navElement = navElement,
+        this.sectionYPosition = sectionYPosition
+    }
+}
 
 // Creates array of page section elements
 const returnPageSections = () => {
@@ -6,12 +16,12 @@ const returnPageSections = () => {
     const pageSections = [];
 
     for(let i = 0; i <= sections.length - 1; i++) {
-        let selector = document.querySelector(`${sections[i]}`);
-        pageSections.push(selector);
+        let element = document.querySelector(`${sections[i]}`);
+        pageSections.push(element);
     }
 
     return pageSections;
-}
+};
 
 // Creates array of nav elements
 const returnNavElements = () => {
@@ -20,31 +30,12 @@ const returnNavElements = () => {
     const navElements = [];
 
     for(let i = 0; i <= elements.length - 1; i++) {
-        let selector = document.querySelector(`${elements[i]}`);
-        navElements.push(selector);
+        let element = document.querySelector(`${elements[i]}`);
+        navElements.push(element);
     }
 
     return navElements;
-}
-
-// Creates an array of objects that contain pair nav-elements and page-sections
-const makeNavObjects = () => {
-    const navElements = returnNavElements();
-    const pageSections = returnPageSections();
-    const sectionYPositons = returnSectionYPositions();
-
-    let navObjects = [];
-
-    for(let i = 0; i <= navElements.length - 1; i++) {
-        navObjects.push({
-            navElement: navElements[i],
-            pageSection: pageSections[i],
-            pageSectionYPosition: sectionYPositons[i]
-        })
-    }
-
-    return navObjects;
-}
+};
 
 // get clientHeight (y position) of section elements
 const returnSectionYPositions = () => {
@@ -57,7 +48,23 @@ const returnSectionYPositions = () => {
     });
 
     return sectionYPositons;
-}
+};
+
+// Creates an array of objects that contain pair nav-elements and page-sections
+const makeNavObjects = () => {
+    const navElements = returnNavElements();
+    const pageSections = returnPageSections();
+    const sectionYPositions = returnSectionYPositions();
+
+    let navObjects = [];
+
+    for(let i = 0; i <= navElements.length - 1; i++) {
+        let navObject = new NavObject(navElements[i], pageSections[i], sectionYPositions[i]);
+        navObjects.push(navObject);
+    }
+
+    return navObjects;
+};
 
 // add navbar event listeners
 // change nav element color on navlink click
@@ -73,9 +80,9 @@ const navEventListener = () => {
                 navElements[i].style.color = '#6c6e8f';
             }
             this.style.color = '#54BF9D';
-        })
-    })
-}
+        });
+    });
+};
 navEventListener();
 
 // mouse over section event listeners 
@@ -84,14 +91,79 @@ const mouseOverSection = () => {
     const navObjects = makeNavObjects();
 
     navObjects.forEach(el => {
-        console.log(el.pageSection);
+        
         el.pageSection.addEventListener('mouseover', function() {
-            console.log(el.pageSection);
             for (let i = 0; i <= navObjects.length - 1; i++) {
                 navObjects[i].navElement.style.color = '#6c6e8f';
             }
             el.navElement.style.color = '#54BF9D';
-        })
-    })
-}
+        });
+    });
+};
 mouseOverSection();
+
+//////////////////////////////////////
+// Get use data /////////////////////
+////////////////////////////////////
+
+class UserData {
+    constructor(name, email, subject, text) {
+        this.name = name,
+        this.email = email,
+        this.subject = subject,
+        this.text = text
+    }
+}
+
+// get form-button
+const getContactFormButton = () =>{
+    const contactFormButton = document.querySelector('#contact-form-submit');
+    
+    return contactFormButton;
+}
+
+// get form element
+const getForm = () =>{
+    const formElement = document.querySelector('#contact-form');
+    
+    return formElement;
+}
+
+// create array of values of input elements
+const getInputElements = () => {
+    const elements = ['#section-contact__form-name-input', '#section-contact__form-email-input', '#section-contact__form-subject-input', '#section-contact__form-message'];
+
+    const inputElements = [];
+
+    for(let i = 0; i <= elements.length - 1; i++) {
+        let el = document.querySelector(`${elements[i]}`);
+        inputElements.push(el.value);
+    }
+
+    return inputElements;
+}
+
+// form prevent reload
+const formPreventReload = () => {
+    const formElement = getForm();
+    
+    formElement.addEventListener('submit', event => {
+        event.preventDefault();
+    });
+}
+formPreventReload();
+
+// get user data
+// add event listener to form-button
+const getUserData = () => {
+    const inputElements = getInputElements();
+    const formButton = getContactFormButton();
+
+    formButton.addEventListener('click', () => {
+        const userData = new UserData(...inputElements);
+        console.log(userData);
+        return userData;
+    });
+
+}
+getUserData();

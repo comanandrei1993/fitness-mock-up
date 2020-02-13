@@ -94,7 +94,7 @@
         <header id="header" class="header">
             <h2 class="header__title">Balanced mind in a balanced body</h2>
             <h2 class="text-uppercase header__brand-name">Powerhouse fitness</h2>
-            <a href="#" class="btn btn--header">Book Now</a>
+            <a href="/pages/book-online.html" class="btn btn--header">Book Now</a>
         </header>
 
             <section id="section-about" class="section-about">
@@ -199,12 +199,12 @@
                     </div>
 
                     <div class="section-contact__form">
-                        <form class="section-contact__form-group">
-                            <input id="section-contact__form-name-input" class="section-contact__input" type="text" placeholder="Name">
-                            <input id="section-contact__form-email-input" class="section-contact__input" type="text" placeholder="Email">
-                            <input id="section-contact__form-subject-input" class="section-contact__input" type="text" placeholder="Subject">
+                        <form id="contact-form" class="section-contact__form-group">
+                            <input id="section-contact__form-name-input" class="section-contact__input" type="text" placeholder="Name" required>
+                            <input id="section-contact__form-email-input" class="section-contact__input" type="text" placeholder="Email" required>
+                            <input id="section-contact__form-subject-input" class="section-contact__input" type="text" placeholder="Subject" required>
                             <textarea id="section-contact__form-message" class="section-contact__input" name="form-message" cols="30" rows="10"></textarea>
-                            <a href="#" class="section-contact__form-submit">Submit</a>
+                            <input type="submit" id="contact-form-submit" class="section-contact__form-submit" value="Submit">
                         </form>
                     </div>
                 </div>
