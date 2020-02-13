@@ -11,7 +11,7 @@ const returnPageSections = () => {
     }
 
     return pageSections;
-}
+};
 
 // Creates array of nav elements
 const returnNavElements = () => {
@@ -25,7 +25,7 @@ const returnNavElements = () => {
     }
 
     return navElements;
-}
+};
 
 // Creates an array of objects that contain pair nav-elements and page-sections
 const makeNavObjects = () => {
@@ -40,11 +40,11 @@ const makeNavObjects = () => {
             navElement: navElements[i],
             pageSection: pageSections[i],
             pageSectionYPosition: sectionYPositons[i]
-        })
+        });
     }
 
     return navObjects;
-}
+};
 
 // get clientHeight (y position) of section elements
 const returnSectionYPositions = () => {
@@ -57,7 +57,7 @@ const returnSectionYPositions = () => {
     });
 
     return sectionYPositons;
-}
+};
 
 // add navbar event listeners
 // change nav element color on navlink click
@@ -73,9 +73,9 @@ const navEventListener = () => {
                 navElements[i].style.color = '#6c6e8f';
             }
             this.style.color = '#54BF9D';
-        })
-    })
-}
+        });
+    });
+};
 navEventListener();
 
 // mouse over section event listeners 
@@ -91,7 +91,7 @@ const mouseOverSection = () => {
                 navObjects[i].navElement.style.color = '#6c6e8f';
             }
             el.navElement.style.color = '#54BF9D';
-        })
-    })
-}
+        });
+    });
+};
 mouseOverSection();
