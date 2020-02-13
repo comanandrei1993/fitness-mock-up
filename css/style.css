@@ -387,11 +387,13 @@ body {
   .section-contact [name=form-message] {
     height: 12rem;
     resize: none; }
-  .section-contact__form-submit:link, .section-contact__form-submit:visited {
+  .section-contact__form-submit {
     padding: .5rem 1rem;
     font-size: 1.4rem;
+    background-color: #4a4c67;
     color: #fefdfe;
     text-decoration: none;
+    border: none;
     transition: background-color .3s ease-out;
     align-self: flex-end; }
   .section-contact__form-submit:hover, .section-contact__form-submit:active {

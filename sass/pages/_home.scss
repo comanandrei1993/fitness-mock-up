@@ -249,12 +249,13 @@
         resize: none;
     }
 
-    &__form-submit:link, 
-    &__form-submit:visited {
+    &__form-submit {
         padding: .5rem 1rem;
         font-size: 1.4rem;
+        background-color: $color-primary;
         color: $color-white-1;
         text-decoration: none;
+        border: none;
         transition: background-color .3s ease-out;
 
         align-self: flex-end;
@@ -263,7 +264,7 @@
     &__form-submit:hover, 
     &__form-submit:active {
         background-color: $color-primary-lighter-2;
-    } 
+    }
 }
 
 .footer {

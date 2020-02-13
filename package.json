@@ -10,5 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "json-server": "^0.16.0"
   }
 }
